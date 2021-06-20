@@ -1,0 +1,6 @@
+---
+- name: Reset Timezone to Asia/Ho_Chi_Minh
+  hosts: all
+  tasks:
+    - name: timedatectl
+      command: timedatectl set-timezone Asia/Ho_Chi_Minh
